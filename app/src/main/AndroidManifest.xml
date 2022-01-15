@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myandroidprojects">
         <activity
+            android:name=".Send_money"
+            android:exported="false" />
+        <activity
             android:name=".mpesapage"
             android:exported="false" />
         <activity

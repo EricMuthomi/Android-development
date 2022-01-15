@@ -78,7 +78,35 @@ public class mpesapage extends AppCompatActivity {
         mpesaList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(mpesapage.this, items.get(position) + " selected", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(mpesapage.this, items.get(position) + " selected", Toast.LENGTH_SHORT).show();
+               if (position==0){
+                   startActivity(new Intent(getApplicationContext(),Send_money.class));
+                   Toast.makeText(mpesapage.this, items.get(position)+ " selected", Toast.LENGTH_SHORT).show();
+               }
+               else if (position==1){
+                   startActivity(new Intent(getApplicationContext(),Send_money.class));
+                   Toast.makeText(mpesapage.this, items.get(position)+ " selected", Toast.LENGTH_SHORT).show();
+               }
+               else if (position==2){
+                   startActivity(new Intent(getApplicationContext(),Send_money.class));
+                   Toast.makeText(mpesapage.this, items.get(position)+ " selected", Toast.LENGTH_SHORT).show();
+               }
+               else if (position==3){
+                   startActivity(new Intent(getApplicationContext(),Send_money.class));
+                   Toast.makeText(mpesapage.this, items.get(position)+ " selected", Toast.LENGTH_SHORT).show();
+               }
+               else if (position==4){
+                   startActivity(new Intent(getApplicationContext(),Send_money.class));
+                   Toast.makeText(mpesapage.this, items.get(position)+ " selected", Toast.LENGTH_SHORT).show();
+               }
+               else if (position==5){
+                   startActivity(new Intent(getApplicationContext(),Send_money.class));
+                   Toast.makeText(mpesapage.this, items.get(position)+ " selected", Toast.LENGTH_SHORT).show();
+               }
+               else {
+                   Toast.makeText(mpesapage.this, "Invalid option", Toast.LENGTH_SHORT).show();
+               }
+
             }
         });
     }
